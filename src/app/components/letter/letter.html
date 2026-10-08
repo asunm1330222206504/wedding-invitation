@@ -1,0 +1,145 @@
+<section
+  class="letter-screen"
+  [class.closing]="isOpening"
+>
+
+  <!-- Soft background -->
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+
+  <!-- Floral decorations -->
+
+  <img
+    src="images/wedding/rose-1.png"
+    alt=""
+    class="rose rose-top-left"
+  >
+
+  <img
+    src="images/wedding/rose-4.png"
+    alt=""
+    class="rose rose-top-right"
+  >
+
+
+  <!-- Letter -->
+  <article class="letter-card">
+
+
+    <!-- Small gold ornament -->
+
+    <div class="top-ornament">
+
+      <span></span>
+
+      <i>✦</i>
+
+      <span></span>
+
+    </div>
+
+
+    <!-- Greeting -->
+
+    <p class="greeting">
+      DEAR FAMILY & FRIENDS
+    </p>
+
+
+    <!-- Main heading -->
+
+    <h1>
+      
+      <span>A Little Note From Us</span>
+    </h1>
+
+
+    <!-- Letter body -->
+
+    <div class="letter-divider">
+
+      <span></span>
+
+      <i>♥</i>
+
+      <span></span>
+
+    </div>
+
+
+    <div class="letter-message">
+
+      <p>
+        Some moments in life are meant
+        to be celebrated together.
+      </p>
+
+      <p>
+        As we begin a beautiful new chapter,
+        we would love to have the people
+        who mean the most to us by our side.
+      </p>
+
+      <p>
+        Your presence, your blessings,
+        and your smiles would make
+        this moment even more special.
+      </p>
+
+    </div>
+
+
+    <!-- Closing -->
+
+    <div class="letter-closing">
+
+      <span>
+        With love
+      </span>
+
+      <strong>
+        ♥
+      </strong>
+
+    </div>
+
+
+    <!-- Continue -->
+
+    <button
+      type="button"
+      class="continue-button"
+      [disabled]="isOpening"
+      (click)="continueInvitation()"
+    >
+
+      <span>
+        Come celebrate with us
+      </span>
+
+      <b>
+        ↓
+      </b>
+
+    </button>
+
+
+  </article>
+
+
+  <!-- Bottom flowers -->
+
+  <img
+    src="images/wedding/rose-2.png"
+    alt=""
+    class="rose rose-bottom-left"
+  >
+
+  <img
+    src="images/wedding/rose-3.png"
+    alt=""
+    class="rose rose-bottom-right"
+  >
+
+</section>

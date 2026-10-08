@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  min-height: 100%;
+
+  background: #fdf0eb;
+
+  font-family:
+    Georgia,
+    'Times New Roman',
+    serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  font-family: inherit;
+}
+
+.mobile-container {
+  width: 100%;
+  max-width: 430px;
+
+  min-height: 100vh;
+  min-height: 100svh;
+
+  margin: 0 auto;
+
+  position: relative;
+
+  overflow-x: hidden;
+}

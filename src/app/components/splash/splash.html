@@ -1,0 +1,80 @@
+<section class="splash-screen" [class.opening]="isOpening">
+
+    <!-- Soft background glow -->
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+
+    <!-- Top floral decoration -->
+    <img src="images/wedding/rose-1.png" alt="" class="rose rose-top-left">
+
+    <img src="images/wedding/rose-2.png" alt="" class="rose rose-top-right">
+
+
+    <!-- Main content -->
+    <main class="splash-content">
+
+
+        <!-- Small heading -->
+        <p class="eyebrow">
+            YOU ARE INVITED TO
+        </p>
+
+
+        <!-- Generated couple-name image -->
+        <img src="images/wedding/couple-names.png" alt="Hariharan weds Kaviya" class="couple-names">
+
+
+        <!-- Celebration text -->
+        <p class="celebration">
+            OUR
+            <span>WEDDING CELEBRATION</span>
+        </p>
+
+
+        <!-- Small gold divider -->
+        <div class="divider">
+            <span></span>
+            <i>♥</i>
+            <span></span>
+        </div>
+
+
+        <!-- Ribbon -->
+        <button type="button" class="ribbon-button" aria-label="Open wedding invitation" [disabled]="isOpening"
+            (click)="openInvitation()">
+
+            <img src="images/wedding/ribbon.png" alt="" class="ribbon-image">
+
+        </button>
+
+
+        <!-- Invitation message -->
+        <p class="message">
+            Two hearts,
+            <br>
+            one beautiful beginning.
+        </p>
+
+
+        <!-- Open instruction -->
+        <button type="button" class="open-button" [disabled]="isOpening" (click)="openInvitation()">
+
+            <span class="arrow">
+                ↓
+            </span>
+
+            <span>
+                Tap to open
+            </span>
+
+        </button>
+
+    </main>
+
+    <!-- Bottom floral decoration -->
+    <img src="images/wedding/rose-3.png" alt="" class="rose rose-bottom-left">
+
+    <img src="images/wedding/rose-2.png" alt="" class="rose rose-bottom-right">
+
+</section>

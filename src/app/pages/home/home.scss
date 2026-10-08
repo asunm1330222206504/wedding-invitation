@@ -1,0 +1,15 @@
+:host {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.mobile-container {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0 auto;
+  overflow-x: hidden;
+  position: relative;
+}

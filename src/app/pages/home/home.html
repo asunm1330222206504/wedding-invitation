@@ -1,0 +1,20 @@
+<div class="mobile-container">
+
+    @if (!showLetter && !showInvitation) {
+
+    <app-splash (opened)="openLetter()"></app-splash>
+
+    }
+
+    @if (showLetter) {
+
+    <app-letter (continued)="openInvitation()"></app-letter>
+
+    }
+
+    @else if (showInvitation) {
+
+    <app-invitation></app-invitation>
+
+    }
+</div>
