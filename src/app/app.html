@@ -1,1 +1,16 @@
+<!-- Keep your existing router outlet -->
 <router-outlet></router-outlet>
+
+<!-- Wedding background music -->
+<audio #weddingAudio src="/music/wedding-song.mp3" loop preload="none">
+</audio>
+
+<!-- Fixed music control -->
+<button type="button" class="music-toggle" [class.music-playing]="isMusicPlaying" (click)="toggleMusic()"
+    [attr.aria-label]="isMusicPlaying ? 'Pause wedding music' : 'Play wedding music'"
+    [attr.title]="isMusicPlaying ? 'Pause music' : 'Play music'">
+
+    <span class="music-icon">
+        {{ isMusicPlaying ? 'Ⅱ' : '♫' }}
+    </span>
+</button>
